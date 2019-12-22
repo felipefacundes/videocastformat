@@ -1,21 +1,20 @@
 #!/bin/bash
-mkdir -p chcastvideos;
 
 for i in *.[mM][pP][4];
   do name=`echo "$i"`;
   echo "$name";
   ffmpeg -i "$i" -vcodec copy -acodec mp3 -n "${name}-chcast.mp4";
+  rm "${name}";
 done;
 
 for i in *.[mM][kK][vV];
   do name=`echo "$i"`;
   echo "$name";
   ffmpeg -i "$i" -vcodec copy -acodec mp3 -n "${name}-chcast.mp4";
+  rm "${name}";
 done;
 
-sleep 1;
-
-mv *-chcast.mp4 *.[sS][rR][tT] chcastvideos/
+ls *-chcast*;
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "Conversion completed"
