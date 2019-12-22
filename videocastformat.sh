@@ -14,6 +14,12 @@ for i in *.[mM][kK][vV];
   rm "${name}";
 done;
 
+for i in *.[sS][rR][tT];
+  do name=`echo "$i"`;
+  echo "$name";
+  mv "${name}" "${name}-chcast.srt";
+done;
+
 ls *-chcast*;
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
