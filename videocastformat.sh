@@ -20,7 +20,7 @@ for i in *.[sS][rR][tT];
   mv "${name}" "${name}-chcast.srt";
 done;
 
-ls *-chcast*;
+ls *-chcast.mp4;
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "Conversion completed"
