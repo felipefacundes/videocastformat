@@ -10,3 +10,6 @@ sudo wget https://raw.githubusercontent.com/felipefacundes/videocastformat/maste
 
 videocastformat.sh
 ```
+
+### Created by Felipe Facundes
+#### Telegram: @FeFacundes
